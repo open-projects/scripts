@@ -1,0 +1,1 @@
+perl -ne 'chomp;s/^ +//;s/<= *//;if(m/^\d+ +HLA-/){@f=split(/ +/);print(join("\t", @f[1..3,11..13]),"\n") }' $*
